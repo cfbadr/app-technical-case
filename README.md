@@ -4,7 +4,7 @@ The repository contains a react-native app with expo for ease of setup.
 
 Install expo with `npm install --global expo-cli`, and aftewards run `expo start` in the repository. The app can now be run.
 
-# Whats the meaning of the case?
+# What's the meaning of the case?
 You are able to try out building something with our tech setup, and we can afterwards have a constructive talk about how you approached a technical implementation/problem.
 
 # What is the case?
