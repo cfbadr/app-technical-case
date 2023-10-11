@@ -11,5 +11,9 @@ export default StyleSheet.create({
         marginBottom: 20,
         fontSize: 16,
         fontWeight: 'bold'
+    },
+    error: {
+        marginBottom: 20,
+        color: 'red'
     }
 })

@@ -10,6 +10,7 @@ function App(props) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{props.loggedIn ? 'Logged in' : 'Not logged in'}</Text>
+            {props.error && <Text style={styles.error}>{props.error}</Text>}
             {props.loading ? (
                 <Loading />
             ) : (
@@ -22,6 +23,7 @@ function App(props) {
 const mapStateToProps = (state) => ({
     loggedIn: state.auth.loggedIn,
     loading: state.auth.loading,
+    error: state.auth.error,
 });
 const mapDispatchToProps = (dispatch) => ({
     login: () => dispatch(login()),

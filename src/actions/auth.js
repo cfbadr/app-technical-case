@@ -30,6 +30,7 @@ export function login() {
         const result = (await api.get('/')).data;
         if(result.version != 4) {
             dispatch(error('Invalid version'));
+            return;
         }
         dispatch(success({
             email: 'test@gmail.com',
