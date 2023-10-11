@@ -26,6 +26,7 @@ function sendLogout() {
 export function login() {
     return async dispatch => {
         dispatch(request());
+        // random mock instead of doing a correct login
         const result = (await api.get('/')).data;
         if(result.version != 4) {
             dispatch(error('Invalid version'));
