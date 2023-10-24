@@ -7,14 +7,6 @@ export default StyleSheet.create({
         backgroundColor: "#fff",
         alignItems: "center",
         justifyContent: "center",
+        gap: Spacing.s04
     },
-    title: {
-        marginBottom: Spacing.s05,
-        fontSize: 16,
-        fontWeight: 'bold'
-    },
-    error: {
-        marginBottom: Spacing.s05,
-        color: 'red'
-    }
 })

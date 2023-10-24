@@ -1,5 +1,5 @@
 import Constants from '../constants/auth';
-import api from '../services/api';
+import { dreamInfluencersLoginApi } from '../services/api';
 
 function request() {
     return {
@@ -26,9 +26,8 @@ function sendLogout() {
 export function login() {
     return async dispatch => {
         dispatch(request());
-        // random mock instead of doing a correct login
-        const result = (await api.get('/')).data;
-        if(result.version != 4) {
+        const result = (await dreamInfluencersLoginApi.get('/')).data;
+        if(result.version != 8) {
             dispatch(error('Invalid version'));
             return;
         }

@@ -1,10 +1,10 @@
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { connect } from 'react-redux';
 import AppContainer from './App';
 import AuthContainer from './Auth';
 
 const Stack = createStackNavigator();
-
 
 function App(props) {
   return (
@@ -13,8 +13,6 @@ function App(props) {
     </Stack.Navigator>
   );
 }
-
-
 
 const mapStateToProps = (state) => ({
     loggedIn: state.auth.loggedIn,
