@@ -45,7 +45,7 @@ export default function App() {
                 name="Settings"
                 component={SettingsScreen}
                 options={{
-                    tabBarIcon: ({ focused }) => <FontAwesomeIcon icon={faGear} color={getBottomBarColor(focused)}/>                   
+                    tabBarIcon: ({ focused }) => <FontAwesomeIcon icon={faGear} color={getBottomBarColor(focused)}/>
                 }}
             />
         </Tab.Navigator>
