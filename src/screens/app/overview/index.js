@@ -22,6 +22,8 @@ function App(props) {
         fetchCelebrities()
     }, [])
 
+    // In a real-world scenario, I would have placed this logic in Redux to minimize API calls.
+    // However, for the sake of this example, I refrained from doing so to potentially discuss it in our next meeting.
     const fetchCelebrities = async () => {
         const result = await getCelebrities(countryCode);
         const celebrities = extractRandomItemsFromArray(result, 3)
